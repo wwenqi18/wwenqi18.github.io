@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="leetcode," />
 
 
 
@@ -77,13 +77,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Notes">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="Problem # / Title96 / Unique Binary Search Tree DescriptionGiven a positive integer $n$, how many structurally unique BST’s (binary search trees) that store values $1, 2, …, n$ can there be? MathGiven">
+<meta name="keywords" content="leetcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unique Binary Search Tree">
+<meta property="og:url" content="http://yoursite.com/2018/06/01/post1/index.html">
 <meta property="og:site_name" content="Notes">
+<meta property="og:description" content="Problem # / Title96 / Unique Binary Search Tree DescriptionGiven a positive integer $n$, how many structurally unique BST’s (binary search trees) that store values $1, 2, …, n$ can there be? MathGiven">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-01T22:33:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Notes">
+<meta name="twitter:title" content="Unique Binary Search Tree">
+<meta name="twitter:description" content="Problem # / Title96 / Unique Binary Search Tree DescriptionGiven a positive integer $n$, how many structurally unique BST’s (binary search trees) that store values $1, 2, …, n$ can there be? MathGiven">
 
 
 
@@ -113,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/01/post1/"/>
 
 
 
 
 
-  <title>Archive | Notes</title>
+  <title>Unique Binary Search Tree | Notes</title>
   
 
 
@@ -138,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -212,74 +217,144 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 1 post. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/01/post1/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wenqi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Notes">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/06/01/post1/" itemprop="url">
-              
-                <span itemprop="name">Unique Binary Search Tree</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Unique Binary Search Tree</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-01T17:07:43-04:00"
-              content="2018-06-01" >
-          06-01
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-01T17:07:43-04:00">
+                2018-06-01
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Problem-Title"><a href="#Problem-Title" class="headerlink" title="Problem # / Title"></a>Problem # / Title</h3><p>96 / Unique Binary Search Tree</p>
+<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Given a positive integer $n$, how many structurally unique BST’s (binary search trees) that store values $1, 2, …, n$ can there be?</p>
+<h2 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h2><p>Given a sequence $1, 2, …, n$. Define the following terms:</p>
+<ul>
+<li>$G(n)$: the number of unique BST’s that store a sequence of length $n$. </li>
+<li>$F(i,n)$: the number of unique BST’s that store a sequence of length $n$, with the number $i$ as the root of the tree</li>
+</ul>
+<p>For any tree with number $i$ as the root, its left branch is a BST constructed from the sequence $1,2,…,i_1$, and its right branch is a BST constructed from the sequence $i+1, i+2, …, n$. So its left branch is one of the $G(i-1)$ unique BST’s, and its right branch is one of the $G(n-i)$ unique BST’s.<br><a id="more"></a></p>
+<p>So $$ F(i,n)=G(i-1)\cdot G(n-i). \tag{1}$$</p>
+<p>Also, since the number of unique BST’s for a sequence of length $n$ can be found by adding up the number of BST’s using each number in the sequence as the root, we have<br>$$G(n) = F(1,n)+F(2,n)+…+F(n,n). \tag{2}$$</p>
+<p>Combining equations (1) and (2), we have<br>$$G(n)=G(0)\cdot G(n-1)+G(1)\cdot G(n-2)+…+G(n-1)\cdot G(0).$$</p>
+<p>To compute $G(n)$ for any $n\geq2$, we first need to know what $G(k)$ is for $k=1,2,…,n-1$.</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>Use bottom-up dynamic programming to tabulate $G(k)$ for $1\leq k \leq n$.</p>
+<h2 id="Time-complexity"><a href="#Time-complexity" class="headerlink" title="Time complexity"></a>Time complexity</h2><p>Computing $G(k)$ for each $k = 2,3,…,n$ takes $2k$ lookups in the array, so the total number of lookups is $2(2+3+…+n)=2*\frac{(2+n)(n-1)}{2}=n^2$. So the overall time complexity is $O(n^2)$.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
-    </div>
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -287,6 +362,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -307,8 +386,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -359,6 +447,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-Title"><span class="nav-number">1.</span> <span class="nav-text">Problem # / Title</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Description"><span class="nav-number"></span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math"><span class="nav-number"></span> <span class="nav-text">Math</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Method"><span class="nav-number"></span> <span class="nav-text">Method</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Time-complexity"><span class="nav-number"></span> <span class="nav-text">Time complexity</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -492,6 +596,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
